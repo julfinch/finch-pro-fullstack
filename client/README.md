@@ -1,5 +1,6 @@
 # Finch Pro 2 - Fullstack
-  -Live Site URL: [https://jul-lactao.netlify.app/](https://jul-lactao.netlify.app/)
+  -Live Site URL: [https://finch-pro-fullstack.vercel.app/](https://finch-pro-fullstack.vercel.app/)
+  -Backup Site URL: [https://finch-pro-frontend.onrender.com/](https://finch-pro-frontend.onrender.com/)
   
   
 ## Table of contents
@@ -21,7 +22,8 @@
 
 ### Links
 
-  -Live Site URL: [https://jul-lactao.netlify.app/](https://jul-lactao.netlify.app/)
+  -Live Site URL: [https://finch-pro-fullstack.vercel.app/](https://finch-pro-fullstack.vercel.app/)
+  -Backup Site URL: [https://finch-pro-frontend.onrender.com/](https://finch-pro-frontend.onrender.com/)
 
 ## Creating a Github Repository
 1.  **Delete .git inside client folder to avoid errors during pushing**

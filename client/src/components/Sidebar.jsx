@@ -146,7 +146,7 @@ const Sidebar = ({
                         {navItems.map(({ text, icon }) => {
                             if (!icon) {
                                 return (
-                                    <Typography key={text} fontWeight="bold" sx={{m: "1rem 0 0.3rem 3rem"}}>
+                                    <Typography key={text} fontWeight="bold" sx={{m: "0.8rem 0 0.3rem 3rem"}}>
                                         {text}
                                     </Typography>
                                 )
@@ -182,7 +182,7 @@ const Sidebar = ({
                                     >
                                         {icon}
                                     </ListItemIcon>
-                                    <ListItemText primary={text}/>
+                                    <ListItemText primary={text} variant="h6"/>
                                     {active === lcText && (
                                         <ChevronRightOutlined sx={{ ml: "auto" }} />
                                     )}
