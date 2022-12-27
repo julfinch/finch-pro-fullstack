@@ -39,24 +39,13 @@
 
     ```shell
     git add .
-    ```
-
-        ```shell
     git commit -m "first commit"
-    ```
-
-    ```shell
     git remote add origin
-    ```
-
-        ```shell
     git remote add origin https://github.com/julfinch/finch-pro-fullstack.git
-    ```
-
-    ```shell
     git push origin master
     ```
 
+---
 ### Install Dependencies
 
 ```js
@@ -85,6 +74,8 @@
   },
 ```
 
+
+---
 ### Additional Info
 
 **CREATE jsconfig.json**
@@ -101,7 +92,6 @@
 ```js
 REACT_APP_BASE_URL=http://localhost:5001
 ```
----
 
 **IGNORE .env.local and npm modules inside .gitignore**
 
