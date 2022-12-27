@@ -1,70 +1,147 @@
-# Getting Started with Create React App
+# Finch Pro 2 - Fullstack
+  -Live Site URL: [https://jul-lactao.netlify.app/](https://jul-lactao.netlify.app/)
+  
+  
+## Table of contents
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- [Overview](#overview)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [Creating a Github Repository](#repo)
+  - [Install Dependencies](#dependencies)
+  - [Additional Info](#additional-info)
+  - [Built With](#built-with)
+- [Author](#author)
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+### Screenshot
 
-### `npm start`
+![](./_readme_img/portfolio.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Links
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  -Live Site URL: [https://jul-lactao.netlify.app/](https://jul-lactao.netlify.app/)
 
-### `npm test`
+## Creating a Github Repository
+1.  **Delete .git inside client folder to avoid errors during pushing**
+1.  **Git init**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    Navigate into your new site’s main directory and then git init.
 
-### `npm run build`
+    ```shell
+    cd ..
+    git init
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1.  **Create a new repository in the github website**
+1.  **Go back to VScode and start pushing**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    ```shell
+    git add .
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+        ```shell
+    git commit -m "first commit"
+    ```
 
-### `npm run eject`
+    ```shell
+    git remote add origin
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+        ```shell
+    git remote add origin https://github.com/julfinch/finch-pro-fullstack.git
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    ```shell
+    git push origin master
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Install Dependencies
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```js
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/material": "^5.11.0",
+    "@mui/x-data-grid": "^5.17.16",
+    "@nivo/bar": "^0.80.0",
+    "@nivo/core": "^0.80.0",
+    "@nivo/geo": "^0.80.0",
+    "@nivo/line": "^0.80.0",
+    "@nivo/pie": "^0.80.0",
+    "@reduxjs/toolkit": "^1.9.1",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.2.0",
+    "react-datepicker": "^4.8.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.5.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+```
 
-## Learn More
+### Additional Info
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**CREATE jsconfig.json**
+```js
+{
+    "compilerOptions": {
+        "baseUrl": "src"
+    },
+    "include": ["src"]
+}
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**CREATE .env.local**
+```js
+REACT_APP_BASE_URL=http://localhost:5001
+```
+---
 
-### Code Splitting
+**IGNORE .env.local and npm modules inside .gitignore**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```shell
+    # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-### Analyzing the Bundle Size
+    # dependencies
+    /node_modules
+    /.pnp
+    .pnp.js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    # testing
+    /coverage
 
-### Making a Progressive Web App
+    # production
+    /build
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+    # misc
+    .DS_Store
+    .env.local
+    .env.development.local
+    .env.test.local
+    .env.production.local
 
-### Advanced Configuration
+    npm-debug.log*
+    yarn-debug.log*
+    yarn-error.log*
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```
 
-### Deployment
+### Built with
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Create-React-App
+- Material UI
+- ReactJS
+- Nivo
+- Redux-Toolkit
 
-### `npm run build` fails to minify
+---
+ 
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Twitter - [@julfinch](https://www.twitter.com/julfinch)
